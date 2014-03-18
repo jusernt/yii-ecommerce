@@ -17,7 +17,9 @@ class m120429_201516_add_setting_table extends CDbMigration
 				KEY title (title),
 				UNIQUE (groupkey)
 			) ENGINE = InnoDB;
+		");
 
+		$this->execute("
 			CREATE TABLE IF NOT EXISTS setting
 			(
 				id int(10) NOT NULL auto_increment,
